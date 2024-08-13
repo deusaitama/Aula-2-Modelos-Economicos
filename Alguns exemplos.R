@@ -38,6 +38,8 @@ predict(modelo_1,novo_dado)
 plot(modelo_1)
 
 # homocedasticidade dos residuos
+plot(distancia$idade,rstandard(modelo_1),xlab="Idade",ylab="Residuos")
+abline(0,0)
 
 
 
